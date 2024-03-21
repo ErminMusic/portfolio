@@ -31,22 +31,19 @@ export default MenuHolder;
 
 const Container = styled.div`
     display: none;
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
         display: block;
     }
 `;
 const NavBarHolder = styled.div`
     width: 40%;
     z-index: 100;
-    @media (max-width: 900px) {
-        width: 70%;
-    }
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
         position: absolute;
         top: 0;
         right: 0;
     }
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
         transform: ${({ $isMenuOpen }) =>
             $isMenuOpen ? "translateX(0)" : "translateX(100%)"};
         transition: transform 0.3s ease-in-out;

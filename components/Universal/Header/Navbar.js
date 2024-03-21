@@ -36,7 +36,7 @@ const Container = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-between;
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
         flex-direction: column;
         justify-content: start;
         padding: 8px 0;
@@ -50,7 +50,7 @@ const NavBarItem = styled.div`
     align-items: center;
     cursor: pointer;
     position: relative;
-    @media (max-width: 850px) {
+    @media (max-width: 750px) {
         flex-direction: row;
         align-items: flex-start;
         padding: 8px;

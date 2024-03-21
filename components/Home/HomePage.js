@@ -1,15 +1,16 @@
-"use client"
-import React from 'react'
-import styled from 'styled-components'
+"use client";
+import React from "react";
+import styled from "styled-components";
+import Hero from "./Hero";
 
 function HomePage() {
-  return (
-    <Container>HomePage</Container>
-  )
+    return (
+        <Container>
+            <Hero />
+        </Container>
+    );
 }
 
-export default HomePage
+export default HomePage;
 
-const Container = styled.div`
-
-`
+const Container = styled.div``;
