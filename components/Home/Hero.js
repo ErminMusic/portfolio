@@ -81,7 +81,7 @@ const HowButton = styled.div`
 `;
 
 const ContactButton = styled(HowButton)`
-    background-color: #ff4141;
+    background-color: #EB0000;
 `;
 
 const CustomLink = styled.a`
