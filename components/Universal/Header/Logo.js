@@ -4,7 +4,7 @@ import React from "react";
 import styled from "styled-components";
 
 function Logo() {
-    const LogoImg = "/PLogo.webp";
+    const LogoImg = "/images/PLogo.webp";
     return (
         <>
             <CustomLink href="/">
