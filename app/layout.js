@@ -1,6 +1,8 @@
 import Header from "@/components/Universal/Header/Header";
 import "./globals.css";
 import StyledComponentsRegistry from "../lib/registry";
+import Footer from "@/components/Universal/Footer/Footer";
+import ScrollToTopButton from "@/components/Universal/ScrollToTopButton/ScrollToTopButton";
 
 export const metadata = {
     title: "Ermin Mushic | Strategic Partner",
@@ -19,7 +21,10 @@ export default function RootLayout({ children }) {
                         <Header />
                     </header>
                     {children}
-                    <footer></footer>
+                    <ScrollToTopButton />
+                    <footer>
+                        <Footer />
+                    </footer>
                 </body>
             </StyledComponentsRegistry>
         </html>
