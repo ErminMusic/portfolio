@@ -25,9 +25,13 @@ const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 `;
 const Wrapper = styled.div`
     width: 85%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;

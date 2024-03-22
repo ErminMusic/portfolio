@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import styled from "styled-components";
-import Hero from "./Hero";
+import Hero from "./Hero/Hero";
+import About from "./About/About";
 
 function HomePage() {
     return (
         <Container>
             <Hero />
+            <About />
         </Container>
     );
 }
