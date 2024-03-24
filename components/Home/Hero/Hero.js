@@ -5,13 +5,15 @@ import HeroButtons from "./HeroButtons";
 function Hero() {
     return (
         <Container>
-            <h1>
-                I will find a way or make a way to grow your business in 45
-                days.
-            </h1>
-            <h2>Guaranteed.</h2>
+            <Wrapper>
+                <h1>
+                    I will find a way or make a way to grow your business in 45
+                    days.
+                </h1>
+                <h2>Guaranteed.</h2>
 
-            <HeroButtons />
+                <HeroButtons />
+            </Wrapper>
         </Container>
     );
 }
@@ -37,5 +39,16 @@ const Container = styled.div`
         @media (max-width: 400px) {
             font-size: 20px;
         }
+    }
+`;
+
+const Wrapper = styled.div`
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media (max-width: 850px) {
+        width: 95%;
     }
 `;
