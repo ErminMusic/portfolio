@@ -5,7 +5,7 @@ import NonNegotiables from "./NonNegotiables";
 
 function Process() {
     return (
-        <Container>
+        <Container id="HowItWorks">
             <Wrapper>
                 <Title>How it Works</Title>
                 <ProcessDetail />
@@ -25,6 +25,7 @@ const Container = styled.div`
     justify-content: center;
     padding: 16px 0 36px 0;
     color: white;
+    scroll-margin-top: 80px;
 `;
 
 const Wrapper = styled.div`

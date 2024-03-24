@@ -5,6 +5,7 @@ import Hero from "./Hero/Hero";
 import About from "./About/About";
 import Testimonials from "./Testimonials/Testimonials";
 import Process from "./HowItWorks/Process";
+import WhatYouGet from "./WhatYouGet/WhatYouGet";
 
 function HomePage() {
     return (
@@ -12,6 +13,7 @@ function HomePage() {
             <Hero />
             <About />
             <Process />
+            <WhatYouGet />
             <Testimonials />
         </Container>
     );

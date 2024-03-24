@@ -4,8 +4,8 @@ import Navbar from "./Navbar";
 import Image from "next/image";
 
 function MenuHolder() {
-    const close = "/images/close.svg"
-    const menu = "/images/menu.svg"
+    const close = "/icons/close.svg"
+    const menu = "/icons/menu.svg"
     const menuRef = useRef(null);
     const [isMenuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {

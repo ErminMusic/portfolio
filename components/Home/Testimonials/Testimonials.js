@@ -14,12 +14,12 @@ function Testimonials() {
 export default Testimonials;
 
 const Container = styled.div`
-    background-color: white;
+    background-color: #222222;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 36px 0;
-    color: #222222;
+    color: white;
 `;

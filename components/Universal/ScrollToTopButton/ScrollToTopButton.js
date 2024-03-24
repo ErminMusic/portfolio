@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 import styled from "styled-components";
 
 const ScrollToTopButton = () => {
-    const UpIcon = "/images/Up.webp";
+    const UpIcon = "/icons/Up.webp";
     const [isVisible, setIsVisible] = useState(false);
     const toggleVisibility = () => {
         if (window.pageYOffset > 400) {
