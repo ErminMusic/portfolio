@@ -1,16 +1,26 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import Image from "next/image";
 
 function MenuHolder() {
-    const close = "/icons/close.svg"
-    const menu = "/icons/menu.svg"
+    const close = "/icons/close.svg";
+    const menu = "/icons/menu.svg";
     const menuRef = useRef(null);
     const [isMenuOpen, setMenuOpen] = useState(false);
     const toggleMenu = () => {
         setMenuOpen(!isMenuOpen);
     };
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (menuRef.current && !menuRef.current.contains(event.target)) {
+                setMenuOpen(false);
+            }
+        };
+        document.addEventListener("mousedown", handleClickOutside);
+        return () =>
+            document.removeEventListener("mousedown", handleClickOutside);
+    }, [menuRef]);
     return (
         <>
             <NavBarHolder ref={menuRef} $isMenuOpen={isMenuOpen}>
@@ -18,9 +28,21 @@ function MenuHolder() {
             </NavBarHolder>
             <Container>
                 {isMenuOpen ? (
-                    <Image width={25} height={25} onClick={toggleMenu} alt="" src={close} />
+                    <Image
+                        width={25}
+                        height={25}
+                        onClick={toggleMenu}
+                        alt=""
+                        src={close}
+                    />
                 ) : (
-                    <Image width={30} height={30} onClick={toggleMenu} alt="" src={menu} />
+                    <Image
+                        width={30}
+                        height={30}
+                        onClick={toggleMenu}
+                        alt=""
+                        src={menu}
+                    />
                 )}
             </Container>
         </>

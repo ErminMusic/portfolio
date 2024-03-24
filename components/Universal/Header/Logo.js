@@ -23,6 +23,8 @@ export default Logo;
 
 const Container = styled.div`
     display: flex;
+    align-items: center;
+    justify-content: center;
     h1 {
         font-size: 24px;
         margin-left: 12px;

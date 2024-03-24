@@ -18,7 +18,7 @@ function HeroButtons() {
 export default HeroButtons;
 
 const ButtonHolder = styled.div`
-    margin: 24px 0;
+    margin: 30px 0;
     display: flex;
     justify-content: space-evenly;
     width: 60%;
