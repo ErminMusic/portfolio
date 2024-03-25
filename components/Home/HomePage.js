@@ -6,6 +6,7 @@ import About from "./About/About";
 import Testimonials from "./Testimonials/Testimonials";
 import Process from "./HowItWorks/Process";
 import WhatYouGet from "./WhatYouGet/WhatYouGet";
+import Contact from "../Contact/Contact";
 
 function HomePage() {
     return (

@@ -5,7 +5,7 @@ function Text() {
     return (
         <TextHolder>
             <span>Ermin Mushic</span>
-            <span>ermin@erminmushic.me</span>
+            <span>ermin@erminmushic.com</span>
             <span>©2024 by Ermin Mushic</span>
         </TextHolder>
     );

@@ -23,6 +23,8 @@ const Container = styled.div`
     align-items: center;
     padding: 28px 0;
     color: white;
+    position: relative;
+    bottom: 0;
 `;
 
 
