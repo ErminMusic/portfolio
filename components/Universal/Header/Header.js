@@ -4,7 +4,7 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import MenuHolder from "./MenuHolder";
 
-function Header() {
+const Header = () => {
     return (
         <Container>
             <Wrapper>
@@ -13,7 +13,7 @@ function Header() {
             </Wrapper>
         </Container>
     );
-}
+};
 
 export default Header;
 

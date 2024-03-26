@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function ProcessDetail() {
+const ProcessDetail = () => {
     const process = [
         {
             title: "Pre-Call Diagnose",
@@ -49,7 +49,7 @@ function ProcessDetail() {
             ))}
         </TextHolder>
     );
-}
+};
 
 export default ProcessDetail;
 

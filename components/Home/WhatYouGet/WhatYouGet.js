@@ -2,9 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import Cards from "./Cards";
 
-function WhatYouGet() {
-
-
+const WhatYouGet = () => {
     return (
         <Container>
             <Wrapper>
@@ -13,7 +11,7 @@ function WhatYouGet() {
             </Wrapper>
         </Container>
     );
-}
+};
 
 export default WhatYouGet;
 
@@ -39,5 +37,3 @@ const Wrapper = styled.div`
 const Title = styled.h2`
     font-size: 32px;
 `;
-
-

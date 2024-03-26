@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Navbar from "./Navbar";
 import Image from "next/image";
 
-function MenuHolder() {
+const MenuHolder = () => {
     const close = "/icons/close.svg";
     const menu = "/icons/menu.svg";
     const menuRef = useRef(null);
@@ -47,7 +47,7 @@ function MenuHolder() {
             </Container>
         </>
     );
-}
+};
 
 export default MenuHolder;
 

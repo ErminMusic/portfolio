@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import HeroButtons from "./HeroButtons";
 
-function Hero() {
+const Hero = () => {
     return (
         <Container>
             <Wrapper>
@@ -16,7 +16,7 @@ function Hero() {
             </Wrapper>
         </Container>
     );
-}
+};
 
 export default Hero;
 

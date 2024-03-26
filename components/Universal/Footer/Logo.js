@@ -3,14 +3,14 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-function Logo() {
+const Logo = () => {
     const LogoImg = "/images/PLogo.webp";
     return (
         <CustomLink href="/">
             <Image src={LogoImg} alt="Logo" width={99} height={66} />
         </CustomLink>
     );
-}
+};
 
 export default Logo;
 

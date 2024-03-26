@@ -4,20 +4,20 @@ import styled from "styled-components";
 import Logo from "./Logo";
 import Text from "./Text";
 
-function Footer() {
+const Footer = () => {
     return (
         <Container>
             <Logo />
             <Text />
         </Container>
     );
-}
+};
 
 export default Footer;
 
 const Container = styled.div`
     width: 100%;
-    display: flex; 
+    display: flex;
     background: black;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,3 @@ const Container = styled.div`
     position: relative;
     bottom: 0;
 `;
-
-
-

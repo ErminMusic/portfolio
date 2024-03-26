@@ -2,14 +2,14 @@ import React from "react";
 import styled from "styled-components";
 import ScreenshotHolder from "./ScreenshotHolder";
 
-function Testimonials() {
+const Testimonials = () => {
     return (
         <Container>
             <h1>Testimonials</h1>
             <ScreenshotHolder />
         </Container>
     );
-}
+};
 
 export default Testimonials;
 

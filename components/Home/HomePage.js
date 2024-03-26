@@ -8,7 +8,7 @@ import Process from "./HowItWorks/Process";
 import WhatYouGet from "./WhatYouGet/WhatYouGet";
 import Contact from "../Contact/Contact";
 
-function HomePage() {
+const HomePage = () => {
     return (
         <Container>
             <Hero />
@@ -18,7 +18,7 @@ function HomePage() {
             <Testimonials />
         </Container>
     );
-}
+};
 
 export default HomePage;
 

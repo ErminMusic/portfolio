@@ -1,8 +1,11 @@
+"use client"
+import Project from "@/components/Projects/Project";
+
 export default function page() {
     return (
         <main>
             <div>
-                Projects
+                <Project />
             </div>
         </main>
     );

@@ -2,7 +2,7 @@ import React from "react";
 import Screenshot from "./Screenshot";
 import styled from "styled-components";
 
-function ScreenshotHolder() {
+const ScreenshotHolder = () => {
     const TestimonialImages = [
         {
             image: "/testimonials/1.webp",
@@ -54,7 +54,7 @@ function ScreenshotHolder() {
             ))}
         </Wrapper>
     );
-}
+};
 
 export default ScreenshotHolder;
 

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import ProcessDetail from "./ProcessDetail";
 import NonNegotiables from "./NonNegotiables";
 
-function Process() {
+const Process = () => {
     return (
         <Container id="HowItWorks">
             <Wrapper>
@@ -14,7 +14,7 @@ function Process() {
             </Wrapper>
         </Container>
     );
-}
+};
 
 export default Process;
 

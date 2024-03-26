@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 import styled from "styled-components";
 
-function Cards() {
+const Cards = () => {
     const HandShakeIcon = "/icons/HandShakeIcon.webp";
     const LaunchIcon = "/icons/LaunchIcon.webp";
     const ScaleIcon = "/icons/ScaleIcon.webp";
@@ -43,7 +43,7 @@ function Cards() {
             ))}
         </ContentHolder>
     );
-}
+};
 
 export default Cards;
 

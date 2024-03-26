@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Description() {
+const Description = () => {
     const description = `Hi, I’m Ermin.<br /><br />
     Over the past three months, I helped my client <b>increase his website visits by x% and conversions by x%.</b><br /><br />
     I approach my work as a strategic partner. <b>I want to be fully involved with your brand and see you succeed.</b><br /><br />
@@ -13,7 +13,7 @@ function Description() {
             <Paragraph dangerouslySetInnerHTML={{ __html: description }} />
         </Container>
     );
-}
+};
 
 export default Description;
 

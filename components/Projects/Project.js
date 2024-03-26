@@ -1,28 +1,27 @@
 import React from "react";
 import styled from "styled-components";
-import Title from "./Title";
-import Question from "./Question";
+import Proof from "./Proof";
 
-const Contact = () => {
+const Project = () => {
     return (
         <Container>
             <Wrapper>
-                <Title />
-                <Question />
+                <Title>My Projects</Title>
+
+                <Proof />
             </Wrapper>
         </Container>
     );
 };
 
-export default Contact;
+export default Project;
 
 const Container = styled.div`
+    margin-top: 80px;
     width: 100%;
-    height: 80vh;
     display: flex;
     justify-content: center;
     color: #222222;
-    margin-top: 80px;
 `;
 
 const Wrapper = styled.div`
@@ -34,4 +33,8 @@ const Wrapper = styled.div`
     @media (max-width: 850px) {
         width: 95%;
     }
+`;
+
+const Title = styled.h1`
+    margin: 16px;
 `;

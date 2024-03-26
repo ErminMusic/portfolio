@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function HeroButtons() {
+const HeroButtons = () => {
     return (
         <ButtonHolder>
             <CustomLink href="#HowItWorks">
@@ -13,7 +13,7 @@ function HeroButtons() {
             </CustomLink>
         </ButtonHolder>
     );
-}
+};
 
 export default HeroButtons;
 
@@ -52,7 +52,7 @@ const HowButton = styled.div`
 `;
 
 const ContactButton = styled(HowButton)`
-    background-color: #EB0000;
+    background-color: #eb0000;
 `;
 
 const CustomLink = styled.a`

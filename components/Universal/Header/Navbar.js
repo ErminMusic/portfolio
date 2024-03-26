@@ -2,7 +2,7 @@ import Link from "next/link";
 import React from "react";
 import styled from "styled-components";
 
-function Navbar() {
+const Navbar = () => {
     const links = [
         {
             name: "Home",
@@ -28,7 +28,7 @@ function Navbar() {
             ))}
         </Container>
     );
-}
+};
 
 export default Navbar;
 
@@ -42,7 +42,7 @@ const Container = styled.div`
         padding: 8px 0;
         position: relative;
     }
-`
+`;
 
 const NavBarItem = styled.div`
     font-weight: bold;

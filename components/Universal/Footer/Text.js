@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Text() {
+const Text = () => {
     return (
         <TextHolder>
             <span>Ermin Mushic</span>
@@ -9,7 +9,7 @@ function Text() {
             <span>©2024 by Ermin Mushic</span>
         </TextHolder>
     );
-}
+};
 
 export default Text;
 

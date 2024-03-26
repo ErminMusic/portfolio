@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import styled from "styled-components";
 
-function Screenshot({ screenshot, alter, imageWidth, imageHeight }) {
+const Screenshot = ({ screenshot, alter, imageWidth, imageHeight }) => {
     return (
         <CustomImage
             src={screenshot}
@@ -11,7 +11,7 @@ function Screenshot({ screenshot, alter, imageWidth, imageHeight }) {
             height={imageHeight}
         />
     );
-}
+};
 
 export default Screenshot;
 

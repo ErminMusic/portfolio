@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Description from "./Description";
 import SideImage from "./SideImage";
 
-function About() {
+const About = () => {
     return (
         <Container>
             <Wrapper>
@@ -12,7 +12,7 @@ function About() {
             </Wrapper>
         </Container>
     );
-}
+};
 
 export default About;
 

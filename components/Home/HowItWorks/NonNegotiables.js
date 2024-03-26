@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function NonNegotiables() {
+const NonNegotiables = () => {
     const nonNegotiables = [
         {
             title: "If we don’t get along, ",
@@ -34,7 +34,7 @@ function NonNegotiables() {
             ))}
         </TextHolder>
     );
-}
+};
 
 export default NonNegotiables;
 
