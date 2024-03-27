@@ -1,40 +1,61 @@
 import React from "react";
-import Image from "next/image";
 import styled from "styled-components";
+import ReactPlayer from "react-player";
+import LockIn from "../../public/videos/LockIn.mp4";
+import DyingIsGay from "../../public/videos/DyingIsGay.mp4";
+import VidiBezobrazluka from "../../public/videos/VidiBezobrazluka.mp4";
+import Wut from "../../public/videos/Wut.mp4";
+import Yesssss from "../../public/videos/Yesssss.mp4";
+
 const Proof = () => {
     const ProjectVideo = [
         {
-            image: "/testimonials/1.webp",
-            alter: "Testimonial Screenshot 1",
+            video: DyingIsGay,
+            alter: "DyingIsGay",
         },
         {
-            image: "/testimonials/1.webp",
-            alter: "Testimonial Screenshot 2",
+            video: LockIn,
+            alter: "LockIn",
+        },
+
+        {
+            video: VidiBezobrazluka,
+            alter: "VidiBezobrazluka",
         },
         {
-            image: "/testimonials/1.webp",
-            alter: "Testimonial Screenshot 3",
+            video: Wut,
+            alter: "Wut",
+        },
+        {
+            video: Yesssss,
+            alter: "Yesssss",
         },
     ];
     return (
-        <>
+        <VideoHolder>
             {ProjectVideo.map((item, index) => (
-                <CustomImage
+                <ReactPlayer
+                    width="100%"
+                    url={item.video}
+                    controls={true}
+                    light={false}
+                    pip={false}
                     key={index}
-                    src={item.image}
-                    width={750}
-                    height={560}
-                    alt={item.alter}
                 />
             ))}
-        </>
+        </VideoHolder>
     );
 };
 
 export default Proof;
 
-const CustomImage = styled(Image)`
-    margin: 20px 0;
+const VideoHolder = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 34px;
+    margin: 12px 0 34px 0;
     width: 100%;
     height: auto;
 `;
