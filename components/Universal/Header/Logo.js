@@ -9,7 +9,7 @@ const Logo = () => {
         <>
             <CustomLink href="/">
                 <Container>
-                    <Image src={LogoImg} alt="Logo" width={99} height={66} />
+                    <Image src={LogoImg} alt="Logo" width={99} height={66} priority />
                     <h1>
                         Ermin <br /> Mushic
                     </h1>

@@ -1,14 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import Proof from "./Proof";
 
 const Project = () => {
+    const [showVideo, setShowVideo] = useState(false);
+
+    useEffect(() => {
+        setTimeout(() => {
+            setShowVideo(true);
+        }, 0);
+    }, []);
     return (
         <Container>
             <Wrapper>
-                <Title>My Projects</Title>
+                {showVideo ? (
+                    <>
+                        <Title>My Projects</Title>
 
-                <Proof />
+                        <Proof />
+                    </>
+                ) : (
+                    <h2>Loading...</h2>
+                )}
             </Wrapper>
         </Container>
     );
@@ -22,6 +35,7 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     color: #222222;
+    min-height: 100vh;
 `;
 
 const Wrapper = styled.div`

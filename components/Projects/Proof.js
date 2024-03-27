@@ -35,12 +35,12 @@ const Proof = () => {
         <VideoHolder>
             {ProjectVideo.map((item, index) => (
                 <ReactPlayer
+                    key={index}
                     width="100%"
                     url={item.video}
                     controls={true}
                     light={false}
                     pip={false}
-                    key={index}
                 />
             ))}
         </VideoHolder>
