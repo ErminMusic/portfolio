@@ -18,7 +18,7 @@ const Cards = () => {
             icon: LaunchIcon,
         },
         {
-            title: "Web design, Copywriting, Ads, Systems.",
+            title: "Web design, SEO, Copywriting, Ads, Systems.",
             icon: ScaleIcon,
         },
         {
