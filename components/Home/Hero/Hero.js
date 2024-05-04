@@ -7,7 +7,7 @@ const Hero = () => {
         <Container>
             <Wrapper>
                 <h1>
-                    I will find a way or make a way to grow your business in 45
+                    I will find or make a way to grow your business in 45
                     days.
                 </h1>
                 <h2>Guaranteed.</h2>

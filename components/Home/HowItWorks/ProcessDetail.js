@@ -29,7 +29,7 @@ const ProcessDetail = () => {
                 "Once I finish the project’s first draft, I will revise it 3 - 5 times and send it to you. We will go back and forth until the first project is ready to test.",
         },
         {
-            title: "Testing & Ideating",
+            title: "Testing & Iterating",
             description:
                 "Once everything is set in place, we will launch the project. When we launch the project, new problems will arise. I will fix and fine-tune them until everything runs completely smoothly.",
         },

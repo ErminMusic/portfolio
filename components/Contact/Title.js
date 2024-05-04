@@ -5,8 +5,8 @@ const Title = () => {
     return (
         <Holder>
             <h2>
-                Discover if we could work together <br />
-                (I can only work with 2 clients at a time)
+                See if we could work together <br />
+                (I can only work with 1 more client)
             </h2>
             <Button>Schedule a call</Button>
         </Holder>
