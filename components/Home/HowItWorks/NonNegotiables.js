@@ -16,7 +16,7 @@ const NonNegotiables = () => {
             titleBold: "we work TOGETHER.",
         },
         {
-            title: "I don’t waste time.",
+            title: "I don’t waste time,",
             titleBold: "contact me ONLY if you are serious about growing your business.",
         },
     ];
